@@ -47,9 +47,9 @@ public class Car extends Transport {
     }
 
 
-    Engine engine = new Engine(int getvolumeEngine);
-     Radiator radiator = new Radiator(int rotationSpeed);
-    Battery battery = new Battery(5000);
+    Engine engine;
+     Radiator radiator;
+    Battery battery;
 
     public Car(Engine engine, Battery battery, Radiator radiator) {
         this.engine = engine;

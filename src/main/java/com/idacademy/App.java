@@ -43,11 +43,17 @@ public class App {
         volvo.printinfo("это хорошая машина");
         volvo.printinfo(25);
 
-        Car electromobile = new Car();
+        Engine engine1 = new Engine( 1560);
+        Radiator radiator1 = new Radiator(2000);
+        Battery battery1 = new Battery(4000);
+        Car electromobile = new Car(engine1, battery1,radiator1);
 
         electromobile.setModels("Prius ");
-        System.out.println("наш автомобиль " + electromobile.getModels() + "   имеент двигатель объемом  " + electromobile.engine + "   радиатор со скоростью вращения   " + electromobile.radiator  + "   батарея емкостью   " + electromobile.battery);
-
+        System.out.print("наш автомобиль " + electromobile.getModels());
+        System.out.print("   имеент двигатель объемом  " + electromobile.engine.getVolumeEngine());
+        System.out.print("   радиатор со скоростью вращения   " + electromobile.radiator.getRotationSpeed());
+        System.out.print("   батарея емкостью   " + electromobile.battery.getContainer());
+        System.out.println( electromobile);
         Scheme sxem = new Scheme("Биполярный", "питающая");
         System.out.println(sxem);
         Integralcheme integrshem = new Integralcheme(" Полевой ","логическая ", "микропроцессорная");
