@@ -56,4 +56,9 @@ public class Car extends Transport {
         this.battery = battery;
         this.radiator = radiator;
     }
+
+    @Override
+    public void CargoShipping() {
+        System.out.println( "прокатим с комфортом на  автомобиле");
+    }
 }

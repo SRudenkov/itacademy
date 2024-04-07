@@ -1,6 +1,8 @@
 package com.idacademy;
 
-public abstract class Transport {
+import interfaces.Alltransport;
+
+public abstract class Transport implements Alltransport {
     private String models;
     private int  height;
     private int weigh;
@@ -55,4 +57,6 @@ public abstract class Transport {
     }
 
     public abstract int drivers();
+
+
 }
