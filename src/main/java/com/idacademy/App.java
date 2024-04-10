@@ -50,7 +50,11 @@ public class App {
         HorseCarriege povozka = new HorseCarriege(4);
         povozka.CargoShipping();
 
-
+        Transport mersedsVito = new Car();
+        System.out.println(mersedsVito.drivers());
+        mersedsVito = new Bus(5);
+        System.out.println(mersedsVito.drivers());
+        mersedes.preMovable();
     }
 
 }
